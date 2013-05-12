@@ -1,6 +1,6 @@
-require "net/smtp"
-require 'tlsmail'
-require 'time'
+#require "net/smtp"
+#require 'tlsmail'
+#require 'time'
 
 class QuestionsController < ApplicationController
     layout "questions_layout"

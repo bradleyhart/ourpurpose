@@ -1,1 +1,1 @@
-<%= link_to display, "/information/#{page}", :popup => ['new_window', 'height=350,width=620']%>
+<%= link_to display, "/information/#{page}", :onclick=>"window.open(this.href,'create_company', 'height=350, width=620');return false;" %>

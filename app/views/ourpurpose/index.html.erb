@@ -1,0 +1,55 @@
+<div class="box">
+    <h1>Our Purpose</h1>
+
+    <p>
+        A historic question which man has asked since the dawn of time is
+        <strong>'What is the purpose of life?'</strong>
+        The fact that man has always pondered this question
+        indicates the necessity of providing a comprehensive answer.
+    </p>
+
+    <p>
+        So what is the answer?
+    </p>
+
+    <p>
+        The only thing that could ever possibly tell us what our purpose of existence
+        is what gave us our existence. <%= link_to 'The Creator', :action => 'the_creator' %>
+        has given us our existence and has communicated our purpose,
+        <%= link_to 'the Message', :controller => 'the_quran' %>.
+    </p>
+
+    <p>
+        Our purpose is to worship
+        our Creator <%= render :partial => "information/popup",
+            :locals=>{:display =>'(Concept of Worship)',
+                    :page=>"concept_of_worship"} %>, our life is a test of deeds,
+        we have been given free will to choose what to do. We can choose to
+        obey or to disobey our Creator.
+    </p>
+
+    <p>The Creator says in the Quran:</p>
+
+    <p class="quote">
+        I created the jinn and humankind only that they might worship Me.
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 51, :ayat => 56 } %>
+    </p>
+
+    <p class="quote">
+        Thinketh man that he is to be left aimless?
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 75, :ayat => 36 } %>
+    </p>
+
+    <p class="quote">
+        "Did you then think that We created you for mere idle play and that you would not
+        have to return to us?"
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 23, :ayat => 115 } %>
+    </p>
+
+    <p class="bottom quote">
+        Blessed is He in Whose Hand is the dominion, and He is Able to do all things. (1)
+        Who has created death and life, that He may test you which of you is best in deed.
+        And He is the All-Mighty, the Oft-Forgiving (2)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 67, :ayat_from => 1, :ayat_to => 2 } %>
+    </p>
+</div>

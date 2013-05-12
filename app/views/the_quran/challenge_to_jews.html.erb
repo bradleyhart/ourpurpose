@@ -1,0 +1,39 @@
+<% content_for :marginNavigation do %>
+    <%= render :partial => "proof_of_quran_navigation" %>
+<% end %>
+
+<div class="box">
+    <h1>Challenge to Jewish</h1>
+
+    <p>
+        The closest to the Muslims are those who say they are Christians
+        an not the Jewish and Pagans:
+    </p>
+
+    <p class="quote">
+        Thou wilt find the most vehement of mankind in hostility to those who believe
+        (to be) the Jews and the idolaters. And thou wilt find the nearest of them in
+        affection to those who believe (to be) those who say: Lo! We are Christians.
+        That is because there are among them priests and monks, and because they are
+        not proud. (82)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 5, :ayat => 82 } %>
+    </p>
+
+    <p>
+        As a whole the Jewish are furthest from the Muslims and
+        the Christians are closer, in terms of affection.
+    </p>
+
+    <p>
+        All the Jewish need to do is get together and plan and be better to the Muslims
+        to prove the Quran wrong.
+    </p>
+
+    <p class="bottom">
+        But what if you are not Jewish <br/>
+        Allah has given everyone a chance:
+        <%= link_to 'Linguistic Miracle', :controller => 'inimitibility'%>,
+        <%= link_to 'Contradictions Challenge', :action => 'contradictions_challenge' %>,
+        <%= link_to 'Preservation', :action => 'preservation' %>                
+    </p>
+</div>

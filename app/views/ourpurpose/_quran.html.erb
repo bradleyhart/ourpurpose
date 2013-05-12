@@ -1,0 +1,11 @@
+<br/>
+<% if defined? ayat then %>
+    <a href="http://www.quranexplorer.com/Quran/?Sura=<%= surat %>&FromVerse=<%= ayat %>&ToVerse=<%= ayat %>&Reciter=Sheikh-Ahmed-Ajmi&Translation=Eng-Dr.%20Mohsin&Zoom=7&TajweedRules=1" target="_blank">
+        Chapter: <%= surat %> Verse: <%= ayat %>
+    </a>
+<% else %>
+    <a href="http://www.quranexplorer.com/Quran/?Sura=<%= surat %>&FromVerse=<%= ayat_from %>&ToVerse=<%= ayat_to %>&Reciter=Sheikh-Ahmed-Ajmi&Translation=Eng-Dr.%20Mohsin&Zoom=7&TajweedRules=1" target="_blank">
+        Chapter: <%= surat %> Verse: <%= ayat_from %> - <%= ayat_to %>
+    </a>
+<% end %>
+

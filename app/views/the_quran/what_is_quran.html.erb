@@ -1,0 +1,33 @@
+<% content_for :marginNavigation do %>
+    <%= render :partial => "proof_of_quran_navigation" %>
+<% end %>
+
+<div class="box">
+    <h1>What is the Quran?</h1>
+
+    <p>
+        The Qur'an is the speech of Allah, sent down upon the last
+        <%= render "ourpurpose/prophet" %>,
+        through the Angel Gabriel, in its precise meaning and precise wording.
+    </p>
+
+    <p class="quote">
+        The revelation of the Book (this Qur'an) is from Allah the All-Mighty, the All-Knower.
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 40, :ayat => 2 } %>
+    </p>
+
+    <p class="quote">
+        Alif. Lam. Mim. (1) This is the Scripture whereof there is no doubt,
+        a guidance unto those who ward off (evil). (2)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 2, :ayat_from => 1, :ayat_to => 2} %>
+    </p>
+
+    <p class="quote bottom">
+        We will show them Our Signs in the universe, and in their own selves,
+        until it becomes manifest to them that this (the Qur'an) is the truth.
+        Is it not sufficient in regard to your Lord that He is a Witness
+        over all things?
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 41, :ayat => 53 } %>
+    </p>
+
+</div>

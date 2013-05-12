@@ -1,0 +1,30 @@
+<% content_for :marginNavigation do %>
+    <%= render :partial => "proof_of_quran_navigation" %>
+<% end %>
+
+<div class="box">
+    <h1>An Opportunity for the Jewish</h1>
+
+    <p>
+        During the time of <%=render "ourpurpose/prophet"%> there was a
+        group of Jewish people having confrontations with the Muslims.
+        They said the last
+        home (paradise) with Allah is only for them. So Allah says in the Quran:
+    </p>
+
+    <p class="quote">
+        Say (unto them): If the abode of the Hereafter in the providence of Allah
+        is indeed for you alone and not for others of mankind (as ye pretend),
+        then long for death (for ye must long for death) if ye are truthful. (94)
+        But they will never long for it, because of that which their own hands have
+        sent before them. Allah is aware of evil-doers. (95)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 2, :ayat_from => 92, :ayat_to => 95 } %>
+    </p>
+
+    <p class="bottom">
+        The verse continues that they will never call for death. All they need to say
+        is <strong>'I want to die'</strong>. So easy, just 4 words and the Quran
+        would have been proved wrong.
+    </p>
+
+</div>

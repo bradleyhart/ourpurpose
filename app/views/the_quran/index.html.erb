@@ -1,0 +1,61 @@
+<% content_for :marginNavigation do %>
+    <%= render :partial => "proof_of_quran_navigation" %>
+<% end %>
+
+<div class="box">
+
+    <h1>The Quran</h1>
+
+    <p>
+        The miracles of Prophets that came before <%= render "ourpurpose/prophet" %> are no
+        longer with us today. However the merciful Creator gave <%= render "ourpurpose/prophet" %>
+        the Quran as a miracle for all of mankind and for all time, which would
+        remain the source of truth and guidance long after <%= render "ourpurpose/prophet" %>
+        had left this world.
+    </p>
+
+    <p>
+        The Quran is a miracle in its language. It challenged and surpassed the limits of
+        literary expression.
+        See <%= link_to 'Linguistic Miracle', :action => 'inimitibility' %>.
+
+    </p>
+
+    <h3>Falsification tests</h3>
+
+    <p>
+        The Quran offers what the scientific community asks for.
+        No scientific theory would be seriously considered without being
+        given a way to prove that theory wrong. The Quran offers this, it has
+        falsification tests. There were tests for people in the past and tests that
+        still apply today. Some of these tests are here:
+    </p>
+
+    <ul>
+        <li><%= link_to 'Contradictions Challenge', :action => 'contradictions_challenge' %></li>
+        <li><%= link_to 'Inimitibility', :action => 'inimitibility', :title => 'Inimitibility' %></li>
+        <li><%= link_to 'Preservation', :action => 'preservation' %></li>
+        <li><%= link_to 'Challenge to the Jews', :action => 'challenge_to_jews' %></li>
+        <li><%= link_to 'Prediction of the Future', :action => 'chapter_ar_rum'%></li>
+        <li><%= link_to 'Opportunity for an Enemy', :action => 'chapter_al_massad'%></li>
+        <li><%= link_to 'Opportunity for the Jews', :action => 'opportunity_for_jews'%></li>
+    </ul>
+
+    <h3>Quran and Science</h3>
+
+    <p>
+        The Quran contains some amazing scentific facts, which science has discovered recently.
+        Many scientists have
+        been astonished by what they have found in the Quran. See
+        <%= link_to 'What Scientists say about the Quran', :action => 'what_scientists_say' %>.
+    </p>
+
+    <h3>The Alternatives</h3>
+
+    <p class="bottom">
+        Proof that there is no other explanation on the authorship
+        of the Quran except that it is from The Creator.
+        See <%= link_to 'The Alternatives', :controller => 'exhausting_the_alternatives' %>.
+    </p>
+
+</div>

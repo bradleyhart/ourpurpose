@@ -1,0 +1,27 @@
+<% content_for :marginNavigation do %>
+    <%= render :partial => "exhausting_the_alternatives_navigation" %>
+<% end %>
+
+<div class="box">
+    <h1>Learnt from Roman Blacksmith</h1>
+
+    <p>
+        There are accusation that <%=render "ourpurpose/prophet"%> learnt the Quran from a
+        blacksmith on the outskirts of Makka. The Quran itself refutes this claim:
+    </p>
+
+    <p class="quote">
+        And indeed We know that they (polytheists and pagans)
+        say: "It is only a human being who teaches him (Muhammad SAW)."
+        The tongue of the man they refer to is foreign, while this (the Qur'an)
+        is a clear Arabic tongue. (103)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 16, :ayat => 103 } %>
+    </p>
+
+    <p class="bottom">
+        The Roman blacksmith could hardly speak arabic and this Quran is so eloquent.
+        It as if a chinese man who does not know english taught shakespeare
+        to write his plays.
+    </p>
+
+</div>

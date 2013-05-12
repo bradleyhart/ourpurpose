@@ -1,0 +1,44 @@
+<% content_for :marginNavigation do %>
+    <%= render :partial => "exhausting_the_alternatives_navigation" %>
+<% end %>
+
+<div class="box">
+    <h1>Moral Reformation</h1>
+
+    <p>
+        Why would a person lie for moral reformation?
+        You can not lie to be truthful, the means should meet the goal.
+        Allah says in the Quran:
+    </p>
+
+    <p class="quote">
+        And who can be more unjust than he who invents a lie against Allah,
+        or says: "A revelation has come to me," whereas as no revelation
+        has come to him in anything; and who says, "I will reveal the like
+        of what Allah has revealed." And if you could but see when the
+        Zalimun (polytheists and wrong-doers) are in the agonies of death,
+        while the angels are stretching forth their hands (saying):
+        "Deliver your souls! This day you shall be recompensed with the
+        torment of degradation because of what you used to utter against
+        Allah other than the truth. And you used to reject His Ayat
+        (proofs, evidences, verses, lessons, signs, revelations etc.) with disrespect!" (93)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 6, :ayat => 93 } %>
+    </p>
+
+    <p>
+        There is a good chance that if he had lied he would have been exposed and he
+        would have been cursing himself as a wicked person in the Quran.
+    </p>
+
+    <p>
+        Allah says in the Quran:
+    </p>
+
+    <p class="quote bottom">
+        And if he (Muhammad SAW) had forged a false saying concerning Us (Allah swt),
+        (44) We surely would have seized him by his right hand (or with power and might),
+        (45) And then we certainly would have cut off his life artery (Aorta), (46)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 69, :ayat_from => 44, :ayat_to => 46 } %>
+    </p>
+    
+</div>

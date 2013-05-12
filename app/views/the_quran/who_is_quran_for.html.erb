@@ -1,0 +1,39 @@
+<% content_for :marginNavigation do %>
+    <%= render :partial => "proof_of_quran_navigation" %>
+<% end %>
+
+<div class="box">
+    <h1>Who is the Quran for?</h1>
+
+    <p>
+        There is a misconception that Islam is a new religion. Islam has always
+        been the true religion.
+    </p>
+
+    <p>
+        There have been many Prophets and Messengers sent
+        to us, all with the same core message of
+        <strong>'There is none worthy of worship except Allah'</strong>
+    </p>
+
+    <p>
+        The first prophet was <%= render "ourpurpose/prophet", :locals=>{:name=>"Adam"} %>.
+        Each prophet sent was for those people and for that time. There were
+        miracles performed in those times but we cannot verify them because we
+        cannot go back in time.
+    </p>
+
+    <p>
+        <%= render "ourpurpose/prophet" %> was the final messenger
+        sent by Allah. He was not sent for a particular nation or people but was sent
+        for the whole of humanity until the Last Day. He was given the final message,
+        the Glorious Quran, the miracle of miracles, the miracle of all times.
+    </p>
+
+    <p class="quote bottom">
+        We sent thee not save as a mercy for the peoples
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 21, :ayat => 107 } %>
+    </p>
+
+
+</div>

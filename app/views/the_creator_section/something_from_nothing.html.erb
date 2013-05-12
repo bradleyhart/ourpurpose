@@ -1,0 +1,33 @@
+<% content_for :marginNavigation do %>
+    <%= render :partial => "the_creator_section_navigation" %>
+<% end %>
+
+<div class="box">
+
+    <h1>Can Something come from Nothing?</h1>
+
+    <p>
+        It goes against logic and reason to think that something can come from nothing. These ayat (verses) of
+        the Quran puts emphasis on this:
+    </p>
+
+    <p class="quote">
+        "Or do they say: "He (Muhammad SAW) has forged it (this Qur'an)?" Nay! They believe not! (33) Let them then
+        produce
+        a recital like unto it (the Qur'an) if they are truthful. (34) Were they created by nothing? or were they
+        themselves
+        the creators? (35) Or did they create the heavens and the earth? Nay, but they have no firm Belief. (36) Or are
+        with
+        them the treasures of your Lord? Or are they the tyrants with the authority to do as they like?" (37)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 52, :ayat_from => 33, :ayat_to => 37 } %>
+    </p>
+
+    <p class="bottom">
+        Everything we perceive in the universe comes into being via a cause,
+        things change and events happen because of causes.
+        This is the undeniable default position to take because the collective
+        experience of mankind has never experienced or witnessed things coming
+        into being out of nothing
+    </p>
+
+</div>

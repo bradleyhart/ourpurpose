@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <meta name="description" content="What is the purpose of our existence?"/>
+    <meta name="keywords" content="ourpurpose, our purpose, meaning of life, purpose, quran, muhammad"/>
+    <title>Our Purpose<%= @page_title %></title>
+    <%= stylesheet_link_tag 'application' %>
+<body>
+
+<div id="wrapper">
+    <div id="title" >
+    </div>
+
+    <div id="header">
+        <%= render :partial => "ourpurpose/ourpurpose_navigation" %>
+        <div id="search" method="get" action="" />
+    </div>
+
+    <div id="content">
+        <div id="colOne">
+            <div id="logo">
+                <h1><a href="#">Our Purpose</a></h1>
+
+                <h2><%= link_to 'there is no god except god', :controller => 'ourpurpose', :action => 'the_creator'%></h2>
+            </div>
+            <div>
+                <%= yield :marginNavigation %>
+            </div>
+        </div>
+
+        <div id="colTwo">
+        	<p><%= flash[:notice] %></p>
+            <%= yield %>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<% content_for :marginNavigation do %>
+    <%= render :partial => "proof_of_quran_navigation" %>
+<% end %>
+
+<div class="box">
+    <h1><%= @title %></h1>
+    <p>
+        The Qur'an is a unique form of Arabic speech, which can only be described as the <strong>'peak of eloquence'</strong>.
+        It selects the perfect words in the most apt arrangements to achieve
+        the intended communicative goal.
+    </p>
+    <p>
+        When the Qur'an is compared to any other
+        Arabic text, past or present, it transcends the choices
+        made by human authors; including words, pronouns, sounds,
+        rhythms and particles.
+    </p>
+    <p>
+        Allah offers a way for non-muslims to disprove the Quran by producing a
+        chapter like one in the Quran:
+    </p>
+
+    <p class="quote">
+        And if ye are in doubt concerning that which We reveal unto Our slave
+        (Muhammad SAW), then produce a surah of the like thereof, and call your
+        witness beside Allah if ye are truthful. (23)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 2, :ayat => 23 } %>
+    </p>
+
+    <p class="quote">
+        Or say they: He hath invented it? Say: Then bring a surah like unto it,
+        and call (for help) on all ye can besides Allah, if ye are truthful. (38)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 10, :ayat => 38 } %>
+    </p>
+
+    <p>
+        People have attempted the challenge but have failed miserably.
+    </p>
+
+    <p>
+        This challenge still remains unmet today. The fact the the Arabs of the time of <%=render "ourpurpose/prophet"%>
+        did not manage to produce a chapter like one in the
+        Quran and all the people up until today have not managed to do so proves that the Quran
+        is from a divine origin.
+    </p>
+
+    <p class="quote">
+        Or they say: He hath invented it. Say: Then bring ten surahs, the like
+        thereof, invented, and call on everyone ye can beside Allah, if ye are
+        truthful! (13) And if they answer not your prayer, then know that it is
+        revealed only in the knowledge of Allah; and that there is no God save Him.
+        Will ye then be (of) those who surrender? (14)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 11, :ayat_from => 13, :ayat_to => 14 } %>
+    </p>
+
+    <p class="bottom">
+        <a target="_blank" href="http://www.khilafah.com/index.php/concepts/islamic-culture/2208-three-lines-that-changed-the-world-the-inimitability-of-the-shortest-chapter-in-the-qu">More
+            information - Three Lines that Changed the World</a>.
+    </p>
+</div>

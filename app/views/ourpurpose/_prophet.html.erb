@@ -1,0 +1,3 @@
+<% if not defined? name then %>
+    Prophet Muhammad <%= render :partial => "/information/popup", :locals=>{:display =>'(blessings and peace be upon him)', :page=>"salutations"}%><% else %>
+    Prophet <%= name %> <%= render :partial => "/information/popup", :locals=>{:display =>'(may peace be upon him)', :page=>"salutations"}%><% end %>

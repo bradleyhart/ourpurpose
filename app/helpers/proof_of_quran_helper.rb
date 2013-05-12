@@ -1,0 +1,2 @@
+module ProofOfQuranHelper
+end

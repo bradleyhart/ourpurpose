@@ -1,0 +1,84 @@
+<% content_for :marginNavigation do %>
+    <%= render :partial => "exhausting_the_alternatives_navigation" %>
+<% end %>
+
+<div class="box">
+    <h1>Exhausting the alternatives</h1>
+
+    <h3>
+        Can Muhammad be the author of the Quran?
+    </h3>
+
+    <p>
+        It is a strange thing, a tragedy, that the author a great work disclaims it.
+        Never did <%=render "ourpurpose/prophet"%> claim that he was the author of the Quran.
+        The Quran happens to be a masterpiece in the works of Arabic. So why would a
+        person disclaim a work that is a masterpiece?
+    </p>
+
+    <h4>The Trustworthy</h4>
+
+    <p>
+        We know from history that from his youth till the day he claimed prophethood
+        at the age of 40 years, history never reports a single lie from him.
+        In fact he was given the title <strong>Al-Alim (The trustworthy)</strong> from friends and foes alike.
+        Even after he claims prohethood his enemies used to entrust his valuables with him
+        for safety. Abu Sufyan (an enemy at the time) went to Abisinya, when the king was
+        interrogating him about <%=render "ourpurpose/prophet"%> he asked; at any instance did
+        the <%=render "ourpurpose/prophet"%> tell a lie? Abu Sufyan said 'no' because that was
+        the truth, at any instance he could have said yes.
+    </p>
+
+    <h4>Illiterate</h4>
+
+    <p>
+        <%=render "ourpurpose/prophet"%> was illiterate. He was a
+        man who had no formal education in any science, language, religious or secular.
+    </p>
+
+    <p>
+        The Quran speaks about a variety of subjects of science like:
+        Astronomy, Embryology, Hydrology, Geology, Sociology, Psychology,
+        Oceanography, Law etc. See
+        <%= link_to 'What Scientists say about the Quran', :controller => 'the_quran', :action => 'what_scientists_say' %>
+    </p>
+
+    <p>
+        Allah says in the Quran:
+    </p>
+
+    <p class="quote">
+        Those who follow the messenger,
+        the Prophet who can neither read nor write,
+        whom they will find described in the Torah and the Gospel (which are) with them...
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 7, :ayat => 157} %>
+    </p>
+
+    <p class="quote">
+        In like manner We have revealed unto thee the Scripture,
+        and those unto whom We gave the Scripture aforetime will believe therein;
+        and of these (also) there are some who believe therein. And none deny Our
+        revelations save the disbelievers. (47) And thou (O Muhammad) wast not a
+        reader of any scripture before it, nor didst thou write it with thy right
+        hand, for then might those have doubted, who follow falsehood. (48)
+        <%= render :partial => "ourpurpose/quran", :locals => { :surat => 29, :ayat_to => 48, :ayat_from => 47 } %>
+    </p>
+
+    <h4>Arabic style</h4>
+    <p>
+        The Quran was revealed over a period of 22 and a half years. It would have
+        been impossible for anyone to retain the exact same style of Arabic in
+        the Quran over such a long period of time, regardless of ever-changing
+        personal circumstances. Human authors tend to gradually change their writing
+        style and also their views and thoughts. Yet the style of the Quran remains
+        consistent from beginning to end.
+    </p>
+
+    <p class="bottom">
+        The personal sayings of <%=render "ourpurpose/prophet"%>
+        are meticulously recorded in books of hadith. If we examine the Arabic
+        style of the hadith and compare it to the style of the Quran, we can see they are
+        clearly distinguishable.
+    </p>
+
+</div>
